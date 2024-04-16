@@ -17,3 +17,4 @@ D:\MiroslavMagerov\AC-3\AC3\AC3\obj\Debug\net8.0-windows\ref\AC3.dll
 D:\MiroslavMagerov\AC-3\AC3\AC3\bin\Debug\net8.0-windows\CsvHelper.dll
 D:\MiroslavMagerov\AC-3\AC3\AC3\obj\Debug\net8.0-windows\AC3.csproj.AssemblyReference.cache
 D:\MiroslavMagerov\AC-3\AC3\AC3\obj\Debug\net8.0-windows\AC3.csproj.CopyComplete
+D:\MiroslavMagerov\AC-3\AC3\AC3\obj\Debug\net8.0-windows\AC3.sourcelink.json

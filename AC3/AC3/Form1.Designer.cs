@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
+            components = new System.ComponentModel.Container();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
@@ -39,7 +38,6 @@
             comarcaSelector = new ComboBox();
             label8 = new Label();
             label9 = new Label();
-            poblacioSelector = new NumericUpDown();
             label10 = new Label();
             domesticXarxaSelector = new TextBox();
             actEconomiquesSelector = new TextBox();
@@ -61,35 +59,23 @@
             ConsumDomestic = new DataGridViewTextBoxColumn();
             poblacioMayor20000 = new Label();
             domesticMedio = new Label();
-            ((System.ComponentModel.ISupportInitialize)poblacioSelector).BeginInit();
+            domesticMesAlt = new Label();
+            domesticMexBaix = new Label();
+            groupBox1 = new GroupBox();
+            poblacioSelector = new TextBox();
+            groupBox2 = new GroupBox();
+            error = new ErrorProvider(components);
             ((System.ComponentModel.ISupportInitialize)dataGrid).BeginInit();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)error).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F);
-            label1.Location = new Point(12, 44);
-            label1.Name = "label1";
-            label1.Size = new Size(372, 25);
-            label1.TabIndex = 0;
-            label1.Text = "Gestió de dades demogràfiques de regions";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14F);
-            label2.Location = new Point(562, 44);
-            label2.Name = "label2";
-            label2.Size = new Size(121, 25);
-            label2.TabIndex = 1;
-            label2.Text = "Estadístiques";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label3.Location = new Point(572, 94);
+            label3.Location = new Point(24, 45);
             label3.Name = "label3";
             label3.Size = new Size(128, 13);
             label3.TabIndex = 2;
@@ -99,7 +85,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label4.Location = new Point(572, 137);
+            label4.Location = new Point(24, 88);
             label4.Name = "label4";
             label4.Size = new Size(132, 13);
             label4.TabIndex = 3;
@@ -109,7 +95,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label5.Location = new Point(572, 183);
+            label5.Location = new Point(24, 134);
             label5.Name = "label5";
             label5.Size = new Size(197, 13);
             label5.TabIndex = 4;
@@ -119,7 +105,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label6.Location = new Point(572, 224);
+            label6.Location = new Point(24, 175);
             label6.Name = "label6";
             label6.Size = new Size(206, 13);
             label6.TabIndex = 5;
@@ -129,7 +115,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label7.Location = new Point(12, 94);
+            label7.Location = new Point(6, 36);
             label7.Name = "label7";
             label7.Size = new Size(28, 13);
             label7.TabIndex = 6;
@@ -138,24 +124,24 @@
             // anySelector
             // 
             anySelector.FormattingEnabled = true;
-            anySelector.Location = new Point(12, 112);
+            anySelector.Location = new Point(6, 54);
             anySelector.Name = "anySelector";
-            anySelector.Size = new Size(70, 23);
+            anySelector.Size = new Size(70, 33);
             anySelector.TabIndex = 7;
             // 
             // comarcaSelector
             // 
             comarcaSelector.FormattingEnabled = true;
-            comarcaSelector.Location = new Point(99, 112);
+            comarcaSelector.Location = new Point(116, 54);
             comarcaSelector.Name = "comarcaSelector";
-            comarcaSelector.Size = new Size(99, 23);
+            comarcaSelector.Size = new Size(99, 33);
             comarcaSelector.TabIndex = 9;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label8.Location = new Point(99, 94);
+            label8.Location = new Point(116, 36);
             label8.Name = "label8";
             label8.Size = new Size(52, 13);
             label8.TabIndex = 8;
@@ -165,24 +151,17 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label9.Location = new Point(218, 94);
+            label9.Location = new Point(260, 38);
             label9.Name = "label9";
             label9.Size = new Size(52, 13);
             label9.TabIndex = 10;
             label9.Text = "Població";
             // 
-            // poblacioSelector
-            // 
-            poblacioSelector.Location = new Point(218, 112);
-            poblacioSelector.Name = "poblacioSelector";
-            poblacioSelector.Size = new Size(120, 23);
-            poblacioSelector.TabIndex = 11;
-            // 
             // label10
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label10.Location = new Point(12, 158);
+            label10.Location = new Point(6, 100);
             label10.Name = "label10";
             label10.Size = new Size(86, 13);
             label10.TabIndex = 12;
@@ -190,22 +169,22 @@
             // 
             // domesticXarxaSelector
             // 
-            domesticXarxaSelector.Location = new Point(12, 191);
+            domesticXarxaSelector.Location = new Point(6, 133);
             domesticXarxaSelector.Name = "domesticXarxaSelector";
-            domesticXarxaSelector.Size = new Size(110, 23);
+            domesticXarxaSelector.Size = new Size(110, 32);
             domesticXarxaSelector.TabIndex = 13;
             // 
             // actEconomiquesSelector
             // 
-            actEconomiquesSelector.Location = new Point(138, 191);
+            actEconomiquesSelector.Location = new Point(141, 133);
             actEconomiquesSelector.Name = "actEconomiquesSelector";
-            actEconomiquesSelector.Size = new Size(110, 23);
+            actEconomiquesSelector.Size = new Size(110, 32);
             actEconomiquesSelector.TabIndex = 15;
             // 
             // label11
             // 
             label11.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label11.Location = new Point(138, 154);
+            label11.Location = new Point(141, 96);
             label11.Name = "label11";
             label11.Size = new Size(140, 34);
             label11.TabIndex = 14;
@@ -213,15 +192,15 @@
             // 
             // consumDomesticSelector
             // 
-            consumDomesticSelector.Location = new Point(414, 150);
+            consumDomesticSelector.Location = new Point(412, 96);
             consumDomesticSelector.Name = "consumDomesticSelector";
-            consumDomesticSelector.Size = new Size(110, 23);
+            consumDomesticSelector.Size = new Size(110, 32);
             consumDomesticSelector.TabIndex = 17;
             // 
             // label12
             // 
             label12.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label12.Location = new Point(308, 150);
+            label12.Location = new Point(306, 96);
             label12.Name = "label12";
             label12.Size = new Size(100, 41);
             label12.TabIndex = 16;
@@ -229,16 +208,16 @@
             // 
             // totalSelector
             // 
-            totalSelector.Location = new Point(414, 191);
+            totalSelector.Location = new Point(412, 137);
             totalSelector.Name = "totalSelector";
-            totalSelector.Size = new Size(110, 23);
+            totalSelector.Size = new Size(110, 32);
             totalSelector.TabIndex = 19;
             // 
             // label13
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label13.Location = new Point(308, 195);
+            label13.Location = new Point(306, 141);
             label13.Name = "label13";
             label13.Size = new Size(32, 13);
             label13.TabIndex = 18;
@@ -246,7 +225,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(357, 244);
+            button1.Location = new Point(357, 230);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 20;
@@ -256,7 +235,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(449, 244);
+            button2.Location = new Point(449, 230);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 21;
@@ -272,6 +251,7 @@
             dataGrid.Name = "dataGrid";
             dataGrid.Size = new Size(826, 150);
             dataGrid.TabIndex = 22;
+            dataGrid.SelectionChanged += dataGrid_SelectionChanged;
             // 
             // Any
             // 
@@ -323,63 +303,121 @@
             // 
             // poblacioMayor20000
             // 
+            poblacioMayor20000.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             poblacioMayor20000.BackColor = SystemColors.ActiveCaption;
-            poblacioMayor20000.Location = new Point(722, 87);
+            poblacioMayor20000.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            poblacioMayor20000.Location = new Point(175, 38);
             poblacioMayor20000.Name = "poblacioMayor20000";
-            poblacioMayor20000.Size = new Size(35, 28);
+            poblacioMayor20000.Size = new Size(35, 29);
             poblacioMayor20000.TabIndex = 23;
             // 
             // domesticMedio
             // 
+            domesticMedio.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
             domesticMedio.BackColor = SystemColors.ActiveCaption;
-            domesticMedio.Location = new Point(722, 131);
+            domesticMedio.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            domesticMedio.Location = new Point(175, 81);
             domesticMedio.Name = "domesticMedio";
-            domesticMedio.Size = new Size(35, 28);
+            domesticMedio.Size = new Size(35, 29);
             domesticMedio.TabIndex = 24;
+            // 
+            // domesticMesAlt
+            // 
+            domesticMesAlt.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            domesticMesAlt.BackColor = SystemColors.ActiveCaption;
+            domesticMesAlt.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            domesticMesAlt.Location = new Point(240, 126);
+            domesticMesAlt.Name = "domesticMesAlt";
+            domesticMesAlt.Size = new Size(35, 29);
+            domesticMesAlt.TabIndex = 25;
+            // 
+            // domesticMexBaix
+            // 
+            domesticMexBaix.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
+            domesticMexBaix.BackColor = SystemColors.ActiveCaption;
+            domesticMexBaix.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            domesticMexBaix.Location = new Point(240, 168);
+            domesticMexBaix.Name = "domesticMexBaix";
+            domesticMexBaix.Size = new Size(35, 29);
+            domesticMexBaix.TabIndex = 26;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(poblacioSelector);
+            groupBox1.Controls.Add(label7);
+            groupBox1.Controls.Add(anySelector);
+            groupBox1.Controls.Add(label8);
+            groupBox1.Controls.Add(comarcaSelector);
+            groupBox1.Controls.Add(label9);
+            groupBox1.Controls.Add(label10);
+            groupBox1.Controls.Add(domesticXarxaSelector);
+            groupBox1.Controls.Add(totalSelector);
+            groupBox1.Controls.Add(label11);
+            groupBox1.Controls.Add(label13);
+            groupBox1.Controls.Add(actEconomiquesSelector);
+            groupBox1.Controls.Add(consumDomesticSelector);
+            groupBox1.Controls.Add(label12);
+            groupBox1.Font = new Font("Segoe UI", 14F);
+            groupBox1.Location = new Point(12, 30);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(560, 183);
+            groupBox1.TabIndex = 27;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Gestió de dades demogràfiques de regions";
+            // 
+            // poblacioSelector
+            // 
+            poblacioSelector.Location = new Point(264, 54);
+            poblacioSelector.Name = "poblacioSelector";
+            poblacioSelector.Size = new Size(110, 32);
+            poblacioSelector.TabIndex = 20;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(label3);
+            groupBox2.Controls.Add(label4);
+            groupBox2.Controls.Add(domesticMexBaix);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(domesticMesAlt);
+            groupBox2.Controls.Add(label6);
+            groupBox2.Controls.Add(domesticMedio);
+            groupBox2.Controls.Add(poblacioMayor20000);
+            groupBox2.Font = new Font("Segoe UI", 14F);
+            groupBox2.Location = new Point(598, 30);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(290, 219);
+            groupBox2.TabIndex = 28;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Estadístiques";
+            // 
+            // error
+            // 
+            error.BlinkStyle = ErrorBlinkStyle.NeverBlink;
+            error.ContainerControl = this;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(890, 462);
-            Controls.Add(domesticMedio);
-            Controls.Add(poblacioMayor20000);
+            ClientSize = new Size(927, 470);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
             Controls.Add(dataGrid);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(totalSelector);
-            Controls.Add(label13);
-            Controls.Add(consumDomesticSelector);
-            Controls.Add(label12);
-            Controls.Add(actEconomiquesSelector);
-            Controls.Add(label11);
-            Controls.Add(domesticXarxaSelector);
-            Controls.Add(label10);
-            Controls.Add(poblacioSelector);
-            Controls.Add(label9);
-            Controls.Add(comarcaSelector);
-            Controls.Add(label8);
-            Controls.Add(anySelector);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
             Name = "Form1";
             Text = "Gestió de dades demogràfiques de regions";
             Load += Form1_Load;
-            ((System.ComponentModel.ISupportInitialize)poblacioSelector).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGrid).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)error).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
-        private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
@@ -389,7 +427,6 @@
         private ComboBox comarcaSelector;
         private Label label8;
         private Label label9;
-        private NumericUpDown poblacioSelector;
         private Label label10;
         private TextBox domesticXarxaSelector;
         private TextBox actEconomiquesSelector;
@@ -411,5 +448,11 @@
         private DataGridViewTextBoxColumn ActEconomiques;
         private DataGridViewTextBoxColumn Total;
         private DataGridViewTextBoxColumn ConsumDomestic;
+        private Label domesticMesAlt;
+        private Label domesticMexBaix;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private TextBox poblacioSelector;
+        private ErrorProvider error;
     }
 }

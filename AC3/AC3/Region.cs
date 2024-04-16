@@ -8,7 +8,9 @@ namespace AC3
 
         [Name("Codi comarca")]
         public int CodiComarca { get; set; }
-        public string Comarca { get; set; }
+
+        [Name("Comarca")]
+        public string NomComarca { get; set; }
 
         [Name("Població")]
         public int Poblacio { get; set; }

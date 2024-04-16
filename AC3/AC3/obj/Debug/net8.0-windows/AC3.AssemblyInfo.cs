@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AC3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e24014bfaa6fff26dc02e58433b7936d336132a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AC3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AC3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
