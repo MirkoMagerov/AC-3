@@ -14,6 +14,8 @@ namespace AC3
         const string csvPath = @".\..\..\..\Files\consumo_agua.csv";
         const string xmlPath = @".\..\..\..\Files\consumo_agua.xml";
 
+        const int YearLimit = 2050, PoblationLimit = 20000;
+
         public Form1()
         {
             InitializeComponent();
@@ -110,7 +112,7 @@ namespace AC3
         {
             anySelector.Items.Clear();
 
-            for (int i = regions.Min(r => r.Any); i <= 2050; i++)
+            for (int i = regions.Min(r => r.Any); i <= YearLimit; i++)
             {
                 anySelector.Items.Add(i);
             }
@@ -168,7 +170,12 @@ namespace AC3
 
             try
             {
+                if (anySelector.Text == string.Empty)
+                {
+                    throw new Exception("Debe elegir un año");
+                }
                 anyComarca = Convert.ToInt32(anySelector.Text);
+                
                 error.SetError(anySelector, null);
             }
             catch (Exception ex)
@@ -281,7 +288,7 @@ namespace AC3
 
                 List<Region> regions = ConvertCsvToList(csvPath);
 
-                poblacioMayor20000.Text = Convert.ToInt32(selectedRow.Cells["Poblacio"].Value.ToString()) > 20000 ? "Sí" : "No";
+                poblacioMayor20000.Text = Convert.ToInt32(selectedRow.Cells["Poblacio"].Value.ToString()) > PoblationLimit ? "Sí" : "No";
                 domesticMedio.Text = Convert.ToString(Convert.ToInt32(selectedRow.Cells["DomesticXarxa"].Value.ToString()) / Convert.ToInt32(selectedRow.Cells["Poblacio"].Value.ToString()));
                 double consumDomestic = Convert.ToDouble(selectedRow.Cells["ConsumDomestic"].Value.ToString());
                 domesticMesAlt.Text = consumDomestic >= regions.Max(r => r.ConsumDomesticCapita) ? "Sí" : "No";

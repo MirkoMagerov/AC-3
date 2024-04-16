@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DAMv1\\AC-3\\AC3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF8EBD2-E290-49CF-AA06-B8FB4A5A57EE}|AC3\\AC3.csproj|e:\\damv1\\ac-3\\ac3\\ac3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{CDF8EBD2-E290-49CF-AA06-B8FB4A5A57EE}|AC3\\AC3.csproj|solutionrelative:ac3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF8EBD2-E290-49CF-AA06-B8FB4A5A57EE}|AC3\\AC3.csproj|e:\\damv1\\ac-3\\ac3\\ac3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF8EBD2-E290-49CF-AA06-B8FB4A5A57EE}|AC3\\AC3.csproj|solutionrelative:ac3\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDF8EBD2-E290-49CF-AA06-B8FB4A5A57EE}|AC3\\AC3.csproj|e:\\damv1\\ac-3\\ac3\\ac3\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDF8EBD2-E290-49CF-AA06-B8FB4A5A57EE}|AC3\\AC3.csproj|solutionrelative:ac3\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 340,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "E:\\DAMv1\\AC-3\\AC3\\AC3\\Form1.cs",
+              "RelativeDocumentMoniker": "AC3\\Form1.cs",
+              "ToolTip": "E:\\DAMv1\\AC-3\\AC3\\AC3\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "AC3\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T18:07:37.498Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\DAMv1\\AC-3\\AC3\\AC3\\Form1.cs",
+              "RelativeDocumentMoniker": "AC3\\Form1.cs",
+              "ToolTip": "E:\\DAMv1\\AC-3\\AC3\\AC3\\Form1.cs",
+              "RelativeToolTip": "AC3\\Form1.cs",
+              "ViewState": "AQIAAA4BAAAAAAAAAAAAACMBAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T18:07:37.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "E:\\DAMv1\\AC-3\\AC3\\AC3\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "AC3\\Form1.Designer.cs",
+              "ToolTip": "E:\\DAMv1\\AC-3\\AC3\\AC3\\Form1.Designer.cs",
+              "RelativeToolTip": "AC3\\Form1.Designer.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAEBVwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-16T18:07:37.541Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

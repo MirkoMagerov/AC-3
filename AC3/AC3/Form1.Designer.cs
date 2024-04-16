@@ -123,18 +123,20 @@
             // 
             // anySelector
             // 
+            anySelector.Font = new Font("Segoe UI", 12F);
             anySelector.FormattingEnabled = true;
             anySelector.Location = new Point(6, 54);
             anySelector.Name = "anySelector";
-            anySelector.Size = new Size(70, 33);
+            anySelector.Size = new Size(70, 29);
             anySelector.TabIndex = 7;
             // 
             // comarcaSelector
             // 
+            comarcaSelector.Font = new Font("Segoe UI", 12F);
             comarcaSelector.FormattingEnabled = true;
             comarcaSelector.Location = new Point(116, 54);
             comarcaSelector.Name = "comarcaSelector";
-            comarcaSelector.Size = new Size(99, 33);
+            comarcaSelector.Size = new Size(194, 29);
             comarcaSelector.TabIndex = 9;
             // 
             // label8
@@ -151,7 +153,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
-            label9.Location = new Point(260, 38);
+            label9.Location = new Point(341, 39);
             label9.Name = "label9";
             label9.Size = new Size(52, 13);
             label9.TabIndex = 10;
@@ -169,16 +171,18 @@
             // 
             // domesticXarxaSelector
             // 
+            domesticXarxaSelector.Font = new Font("Segoe UI", 12F);
             domesticXarxaSelector.Location = new Point(6, 133);
             domesticXarxaSelector.Name = "domesticXarxaSelector";
-            domesticXarxaSelector.Size = new Size(110, 32);
+            domesticXarxaSelector.Size = new Size(110, 29);
             domesticXarxaSelector.TabIndex = 13;
             // 
             // actEconomiquesSelector
             // 
+            actEconomiquesSelector.Font = new Font("Segoe UI", 12F);
             actEconomiquesSelector.Location = new Point(141, 133);
             actEconomiquesSelector.Name = "actEconomiquesSelector";
-            actEconomiquesSelector.Size = new Size(110, 32);
+            actEconomiquesSelector.Size = new Size(110, 29);
             actEconomiquesSelector.TabIndex = 15;
             // 
             // label11
@@ -192,9 +196,10 @@
             // 
             // consumDomesticSelector
             // 
+            consumDomesticSelector.Font = new Font("Segoe UI", 12F);
             consumDomesticSelector.Location = new Point(412, 96);
             consumDomesticSelector.Name = "consumDomesticSelector";
-            consumDomesticSelector.Size = new Size(110, 32);
+            consumDomesticSelector.Size = new Size(110, 29);
             consumDomesticSelector.TabIndex = 17;
             // 
             // label12
@@ -208,9 +213,10 @@
             // 
             // totalSelector
             // 
+            totalSelector.Font = new Font("Segoe UI", 12F);
             totalSelector.Location = new Point(412, 137);
             totalSelector.Name = "totalSelector";
-            totalSelector.Size = new Size(110, 32);
+            totalSelector.Size = new Size(110, 29);
             totalSelector.TabIndex = 19;
             // 
             // label13
@@ -367,9 +373,10 @@
             // 
             // poblacioSelector
             // 
-            poblacioSelector.Location = new Point(264, 54);
+            poblacioSelector.Font = new Font("Segoe UI", 12F);
+            poblacioSelector.Location = new Point(345, 55);
             poblacioSelector.Name = "poblacioSelector";
-            poblacioSelector.Size = new Size(110, 32);
+            poblacioSelector.Size = new Size(110, 29);
             poblacioSelector.TabIndex = 20;
             // 
             // groupBox2
